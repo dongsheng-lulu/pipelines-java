@@ -35,3 +35,5 @@ steps:
   inputs:
     artifactName: 'war'
     pathToPublish: '$(build.artifactStagingDirectory)'
+
+- script: docker build -t $(dockerId)/$(imageName) .  # add options to this command to meet your needs
